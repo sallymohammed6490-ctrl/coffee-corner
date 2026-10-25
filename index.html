@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Coffee & corner coffee shop — freshly brewed coffee and delicious treats.">
+  <title>Coffee & corner | Coffee Shop</title>
+  <link rel="stylesheet" href="css/master.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a href="#home" class="logo">Coffee <span>&</span> corner</a>
+    <nav class="links" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#cart">Cart <span class="cart-badge" id="nav-cart-count">0</span></a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#menu" class="nav-button">Order Now</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR DAILY DOSE OF HAPPINESS</p>
+        <h1>Life Begins<br>After <span>Coffee.</span></h1>
+        <p class="hero-text">Freshly brewed coffee, delicious treats, and cozy moments. Your favorite corner of happiness is waiting for you.</p>
+        <a href="#menu" class="button">Explore Our Menu</a>
+        <div class="hero-note"><span aria-hidden="true">☕</span> Made with love. Served with warmth.</div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=85" alt="Fresh coffee on a wooden table">
+        <div class="image-label"><span>Freshly Brewed</span><strong>Every Single Day</strong></div>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Our features">
+      <article class="feature"><span class="feature-icon" aria-hidden="true">☕</span><h3>Quality Coffee</h3><p>Carefully selected beans in every cup.</p></article>
+      <article class="feature"><span class="feature-icon" aria-hidden="true">🥐</span><h3>Fresh Treats</h3><p>Delicious bites made for your coffee break.</p></article>
+      <article class="feature"><span class="feature-icon" aria-hidden="true">♡</span><h3>Cozy Moments</h3><p>A warm place to relax and feel at home.</p></article>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=900&q=85" alt="Cozy coffee shop interior" loading="lazy">
+      </div>
+      <div class="about-content">
+        <p class="eyebrow">OUR LITTLE STORY</p>
+        <h2>A Little Coffee.<br>A Lot of <span>Love.</span></h2>
+        <p>At Bean & Bloom, we believe that the best moments often begin with a great cup of coffee.</p>
+        <p>From the first morning espresso to an afternoon latte, every cup is prepared to make your day a little brighter.</p>
+        <a href="#contact" class="text-link">Come Say Hello →</a>
+      </div>
+    </section>
+
+    <section class="menu section" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">MADE FRESH FOR YOU</p>
+        <h2>Our Favorite <span>Sips</span></h2>
+        <p>Find your next favorite cup.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80" alt="Creamy latte" loading="lazy">
+          <div class="menu-info"><div class="menu-title"><h3>Classic Latte</h3><span>$4.50</span></div><p>Espresso blended with silky steamed milk.</p><button class="add-to-cart" data-name="Classic Latte" data-price="4.50">Add to Cart +</button></div>
+        </article>
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=80" alt="Espresso coffee" loading="lazy">
+          <div class="menu-info"><div class="menu-title"><h3>Rich Espresso</h3><span>$3.00</span></div><p>A bold and smooth shot of pure coffee.</p><button class="add-to-cart" data-name="Rich Espresso" data-price="3.00">Add to Cart +</button></div>
+        </article>
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=700&q=80" alt="Iced coffee" loading="lazy">
+          <div class="menu-info"><div class="menu-title"><h3>Iced Coffee</h3><span>$4.00</span></div><p>Chilled coffee for a refreshing break.</p><button class="add-to-cart" data-name="Iced Coffee" data-price="4.00">Add to Cart +</button></div>
+        </article>
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=700&q=80" alt="Cappuccino" loading="lazy">
+          <div class="menu-info"><div class="menu-title"><h3>Cappuccino</h3><span>$4.25</span></div><p>Espresso, steamed milk, and soft foam.</p><button class="add-to-cart" data-name="Cappuccino" data-price="4.25">Add to Cart +</button></div>
+        </article>
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80" alt="Freshly brewed coffee" loading="lazy">
+          <div class="menu-info"><div class="menu-title"><h3>House Coffee</h3><span>$3.50</span></div><p>Our everyday favorite, brewed fresh.</p><button class="add-to-cart" data-name="House Coffee" data-price="3.50">Add to Cart +</button></div>
+        </article>
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80" alt="Fresh bakery treats" loading="lazy">
+          <div class="menu-info"><div class="menu-title"><h3>Fresh Pastry</h3><span>$3.75</span></div><p>A buttery treat to make your day sweeter.</p><button class="add-to-cart" data-name="Fresh Pastry" data-price="3.75">Add to Cart +</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cart section" id="cart">
+      <div class="section-heading">
+        <p class="eyebrow">YOUR SELECTION</p>
+        <h2>Your Shopping <span>Cart</span></h2>
+        <p>Add items from the menu and review your total here.</p>
+      </div>
+      <div class="cart-box">
+        <div class="cart-top"><p>Items in cart: <strong id="cart-count">0</strong></p><button id="clear-cart" class="clear-button" type="button">Clear Cart</button></div>
+        <div id="cart-items" class="cart-items" aria-live="polite"><p class="empty-cart">Your cart is empty.</p></div>
+        <div class="cart-bottom"><h3>Total: <span>$<span id="cart-total">0.00</span></span></h3><p class="cart-note">Demo cart only — no real orders or payments are processed.</p></div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div><p class="eyebrow">A LITTLE TREAT FOR YOU</p><h2>Good Coffee.<br>Better Days.</h2><p>Take a break, enjoy a cup, and make the moment yours.</p><a href="#menu" class="button button-light">Find Your Favorite</a></div>
+    </section>
+
+   <section class="contact section" id="contact">
+  <div class="section-heading">
+    <p class="eyebrow">WE'D LOVE TO SEE YOU</p>
+    <h2>Let's Have a <span>Coffee</span></h2>
+    <p>
+      Have a question? We'd love to hear from you.
+    </p>
+  </div>
+
+  <div class="contact-box">
+    <div>
+      <span class="contact-icon" aria-hidden="true">📍</span>
+      <h3>Visit Us</h3>
+      <p>123 Coffee Street</p>
+      <p>Your City, Your Country</p>
+    </div>
+
+    <div>
+      <span class="contact-icon" aria-hidden="true">🕒</span>
+      <h3>Opening Hours</h3>
+      <p>Monday – Sunday</p>
+      <p>8:00 AM – 10:00 PM</p>
+    </div>
+
+    <div>
+      <span class="contact-icon" aria-hidden="true">✉️</span>
+      <h3>Say Hello</h3>
+      <p>
+        <a 
+        href="mailto:hello@example.com"> hello@example.com</a>
+      </p>
+      <p>Replace with your real email.</p>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo">Coffee <span>&</span> corner</a>
+    <p>Good coffee, good people, good moments.</p>
+    <p class="copyright">© <span id="year">2026</span> Coffee & corner. Demo website.</p>
+  </footer>
+</body>
+</html>
